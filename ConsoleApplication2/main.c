@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <math.h>
-void task1() {
-    float x1, x2, x3, y1, y2, y3;
-    float a, b, c, p;
+void task1() { //задача 1
+    float x1, x2, x3, y1, y2, y3;  
+    float a, b, c, p; 
     printf("input meaning of x1: ");
     scanf_s("%f", &x1);
     printf("input meaning of x2: ");
@@ -24,7 +24,7 @@ void task1() {
     p = a + b + c;
     printf("perimetr = %f \n", p);
 }
-void task2() {
+void task2() { //задача 2
     float a, b, c;
     printf("input meaning a = ");
     scanf_s("%f", &a);
@@ -39,7 +39,7 @@ void task2() {
         printf("triangle is not equilateral");
     }
 }
-void task3() {
+void task3() { //задача 3
     float a1, a2, a3;
     float min, max;
     printf("input meaning a1 = ");
@@ -50,13 +50,13 @@ void task3() {
     scanf_s("%f", &a3);
     float m[3] = { a1,a2,a3 };
     max = m[0];
-    for (int i = 0; i < 3; ++i) {
+    for (int i = 0; i < 3; ++i) { 
         if (m[i] > max){
             max = m[i];
         }
     }
     min = m[0];
-    for (int i = 0; i < 3; ++i) {
+    for (int i = 0; i < 3; ++i) { 
         if (m[i] < min){
             min = m[i];
         }
@@ -69,7 +69,7 @@ void task3() {
         printf("it's not an arithmetic progression");
 
 }
-void task4() {
+void task4() { //задача 4
     char a[10], mexico[15] = "Mexico", usa[15] = "USA", canada[15] = "Canada", 
         greenland[15] = "Greenland", jamaica[15] = "Jamaica", panama[15] = "Panama", 
         bahamas[15] = "Bahamas", dominica[15] = "Dominica", salvador[15] = "Salvador";
